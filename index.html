@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>IAA Alum Talk</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/theme/serif.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,9 +25,9 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-				<h1>[Talk Title]</h1>
-			<h2>Peter Baumgartner<h2>
-			<h3>IAA Alum Talk - Oct 11, 2016</h3>
+				<h3>Using Social Network Analysis to Understand Community Formation of Medical Marijuana Users</h3>
+			<h4>Peter Baumgartner (MSA 2014)</h4>
+			<h4>IAA Alum Talk - Oct 11, 2016</h4>
 			<p><a href="https://pmbaumgartner.github.io/iaa-alum-talk/#/">https://pmbaumgartner.github.io/iaa-alum-talk/</a></p>
 				</section>
 				<section>
@@ -36,9 +36,24 @@
 					<blockquote>RTI is an independent, nonprofit institute that provides research, development, and technical services to government and commercial clients worldwide. Our mission is to improve the human condition by turning knowledge into practice.</blockquote>
 				</section>
 				<section>
-
+					<section>
+						<h3>A thought experiment...</h3>
+						<img src="http://i.imgur.com/2NvM1NJ.png" width="720" class="fragment"/>
+					</section>
+					<section>
+						<img src="http://i.imgur.com/46ZLTCx.jpg" width="720"/>
+					</section>
+					<section>
+						<img src="http://i.imgur.com/OMjIiRX.jpg" width="720" />
+					</section>
+					<section>
+						<img src="http://i.imgur.com/NUGZqsA.jpg" width="720" />
+					</section>
+					<section>
+						<img src="http://i.imgur.com/DUK6yKd.jpg" width="720" />
+					</section>
 				<section>
-					<h3>Why should I care about marijuana?</h3>
+					<h3>Legal Standing</h3>
 					<img src="https://cdn0.vox-cdn.com/thumbor/XgJV8PL3f_wK8x2xcr4veiaDrHk=/1600x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/6620527/marijuana_laws_map.0.png" width="600"/>
 					<p>
 						Source: <a href="http://www.vox.com/cards/marijuana-legalization">http://www.vox.com/cards/marijuana-legalization</a>
@@ -62,7 +77,7 @@
 				</script>
 				</section>
 				<section>
-					<h3>Budtenders: Becoming Health Care providers</h3>
+					<h3>Budtenders: Becoming Health Care Providers</h3>
 					<img src="http://dailyleafdeals.com/wp-content/uploads/2016/01/budtender.jpeg" />
 				</section>
 				<section>
@@ -72,15 +87,158 @@
 				</section>
 			</section>
 			<section>
-				<h2>Research Question:</h2>
+				<section>
+					<h2>Research Question:</h2>
+					<p>
+						How do dispensaries use Twitter to engage with medical cannabis patients and their larger follower base?
+					</p></br>
+					<h3>Hypothesis:</h3>
+					<p>
+						Communities of users form around dispensaries dependent upon how the dispensaries themselves use Twitter.
+					</p>
+				</section>
+			<section>
+				<h2>Analytic Plan</h2>
+				<ol>
+					<li>
+						Acquire Follower IDs for Selected Dispensaries Twitter Accounts
+					</li>
+					<li>
+						Using followers shared between two dispensaries, find communities of dispensaries with network analysis approach
+					</li>
+					<li>
+						Develop metrics based on dispensaries cyberbehaviors on Twitter
+					</li>
+					<li>
+						Use metrics in a predictive model to predict community membership
+					</li>
+				</ol>
+			</section>
+			<section>
+				<img src="http://i.imgur.com/eriy20l.png" width="720" />
+			</section>
+			<section>
+				<h4>Factor Analysis</h4>
+				<img src="http://i.imgur.com/EHoJyKK.png" />
+			</section>
+
+			<section>
+				<h4>Los Angeles Dispensaries Network</h4>
+				<img src="http://i.imgur.com/LKDPH7Y.jpg" width="640" />
+			</section>
+			<section>
+				<h4>95th Percentile Weights Network</h4>
+				<img src="http://i.imgur.com/zD3mMOh.png" width="640"/>
+			</section>
+
+			<section>
+				<h4>Multinomial Logistic Regression</h4>
+				<img src="http://i.imgur.com/QHWAkAz.png" />
+			</section>
+			<section>
+				<h3>Conclusion</h3>
 				<p>
-					How do dispensaries use Twitter to engage with medical cannabis patients and their larger follower base?
-				</p></br>
-				<h3>Hypothesis:</h3>
+					There is <em>some</em> evidence that dispensary behavior on Twitter can predict community formation.
+				</p>
+			</br>
+				<h4>Also...</h4>
 				<p>
-					Communities of users form around dispensaries dependent upon how the dispensaries themselves use twitter.
+					In San Fransisco the model had significant predictors to distinguish between all 3 communities.
 				</p>
 			</section>
+		</section>
+		<section>
+			<section>
+				<h4>Can we better understand the communities and users that make these communities?</h4>
+				<img src="https://cdn-images-1.medium.com/max/1600/1*cLk_niE2JlJcHwWU0IFc8Q.png" width="720" class="fragment"/>
+			</section>
+			<section>
+				<img src="http://i.imgur.com/UMJx2bO.png" width="720"/>
+			</section>
+			<section data-background-image="images/all_network.png" data-background-size="50%">
+				<p>
+					Entire Network
+				</p>
+			</section>
+			<section data-background-image="images/dispensary_locations.png" data-background-size="50%">
+				<p style="color: #fff">
+					Dispensary Accounts
+				</p>
+			</section>
+
+			<section data-background-image="images/mean_distance.png" data-background-size="50%">
+				<p>
+					Mean Distance to Dispensary
+				</p>
+			</section>
+			<section>
+				<img src="https://graph-tool.skewed.de/static/doc/_images/nested-diagram.svg" width="50%"/>
+			</section>
+			<section>
+				<p>
+					Level : Blocks
+				</p>
+				<ul>
+				<li>level 0: 359</li>
+				<li>level 1: 183</li>
+				<li>level 2: 84</li>
+				<li>level 3: 40</li>
+				<li>level 4: 15</li>
+				<li>level 5: 4</li>
+				<li>level 6: 2</li>
+				<li>level 7: 1</li>
+								</ul>
+			</section>
+			<section data-background-image="images/block_5.png" data-background-size="50%" data-background-color="#666666">
+				<h4>Level 5</h4>
+			</section>
+
+			<section data-background-image="images/block_0.png" data-background-size="50%" data-background-color="#666666">
+				<h4>Level 0</h4>
+			</section>
+			<section>
+				<h4>What's Next?</h4>
+				<ul>
+					<li>
+						Analyze community/block membership of dispensaries
+					</li>
+					<li>
+						Correlate community/block membership to twitter metadata
+					</li>
+					<li>
+						Define dimensions of cyberbehavior that relate to community/block membership
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section>
+			<h4>Other RTI Cannabis Research</h4>
+			<li>
+				Budtender Survey
+			</li>
+			<li>
+				Cannabis Convo
+			</li>
+			<img src="images/cannabisconvo.png" width="640"/>
+		</section>
+		<section>
+			<h3>Things to Check Out</h3>
+			<li>
+				Python (<code>NetworkX</code>, <code>graph-tool</code>)
+			</li>
+			<li>
+				Gephi (visualization / network analysis)
+			</li>
+			<li>
+				MongoDB
+			</li>
+			<li>
+				<a href="https://youtu.be/7fsreJMy_pI?list=PLGVZCDnMOq0riEg1pG6D2DCNRCOOHZDRg"><em>Connected: A Social Network Analysis Tutorial with NetworkX (YouTube)</em></a>
+			</li>
+		</section>
+		<section>
+			<h1>Q&amp;A</h1>
+		</section>
 			</div>
 		</div>
 
@@ -97,6 +255,7 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
